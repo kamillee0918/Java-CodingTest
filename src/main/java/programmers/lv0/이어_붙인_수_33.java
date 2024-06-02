@@ -18,6 +18,7 @@ public class 이어_붙인_수_33 {
                 .collect(Collectors.joining());
 
         answer += Integer.parseInt(odd) + Integer.parseInt(even);
+
         return answer;
     }
 
