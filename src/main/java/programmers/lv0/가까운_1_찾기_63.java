@@ -2,32 +2,8 @@ package programmers.lv0;
 
 import java.util.Arrays;
 
-
-
 public class 가까운_1_찾기_63 {
     public int solution(int[] arr, int idx) {
-//        int n = t.length();
-//        int[] dp = new int[n + 1];
-//
-//        // 초기화
-//        for (int i = 0; i <= n; i++) {
-//            dp[i] = Integer.MAX_VALUE;
-//        }
-//
-//        // 기저 조건
-//        dp[0] = 0;
-//
-//        // 동적 프로그래밍
-//        for (int i = 1; i <= n; i++) {
-//            for (String s : strs) {
-//                if (t.startsWith(s, i - s.length())) {
-//                    dp[i] = Math.min(dp[i], dp[i - s.length()] + 1);
-//                }
-//            }
-//        }
-//
-//        // 결과 반환
-//        return dp[n] == Integer.MAX_VALUE ? -1 : dp[n];
         for (int i = idx; i < arr.length; i++) {
             if (arr[i] == 1) {
                 return i;
